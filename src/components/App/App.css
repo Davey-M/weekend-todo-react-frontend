@@ -1,38 +1,67 @@
-.App {
-	text-align: center;
-}
-
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
-}
-
-.App-header {
-	background-color: #282c34;
-	min-height: 100vh;
+header {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: center;
-	font-size: calc(10px + 2vmin);
+	padding: 0.5rem 1rem;
+	background-color: orange;
 	color: white;
 }
 
-.App-link {
-	color: #61dafb;
+h1,
+p {
+	margin: 0;
 }
 
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: max-content;
+	margin: 1rem auto 0rem auto;
+	gap: 1rem;
+}
+
+main textarea {
+	width: calc(100% - 1rem);
+}
+
+.note {
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem;
+	box-shadow: 0rem 0.2rem 0.3rem #00000071;
+	margin: 1rem;
+}
+
+.buttonContainer * {
+	display: block;
+	margin-left: auto;
+}
+
+.note-container {
+	/* padding: 1rem; */
+	border-bottom: 0.25rem solid orange;
+	min-height: 50px;
+}
+
+.gap {
+	height: 0.5rem;
+}
+
+.container {
+	margin: 1rem;
+}
+
+.containerForm {
+	width: fit-content;
+	margin: auto;
+}
+
+button {
+	padding: 0.5rem;
+}
+
+input {
+	padding: 0.5rem;
+	margin-right: 1rem;
 }

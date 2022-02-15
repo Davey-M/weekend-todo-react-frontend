@@ -21,6 +21,11 @@ function Main() {
                 <Container name="First Container" notes={ [ 'Just one note here' ] }/>
                 <Container name="Second Container" notes={ [] }/>
                 <Container name="Third Container" notes={ [ 'Just one note here' ] }/>
+
+                <div className="containerForm">
+                    <input type="text" placeholder='Container Name'/>
+                    <button>Add Container</button>
+                </div>
             </div>
         </main>
     )
